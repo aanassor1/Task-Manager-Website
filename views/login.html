@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>taskManager | Login</title>
+    <link href='https://fonts.googleapis.com/css?family=Shippori Antique B1' rel='stylesheet'>
+    <link rel="stylesheet" href="../resources/css/login.css"/>
+    <script src="../resources/js/login.js"></script>
+  </head>
+  <body>
+    <!--Login Section-->
+    <div id="login-section">
+      <img src="../resources/images/taskManager-Icon-red.png" class="logo" alt="taskManager Icon">
+      <div class="login-body">
+        <p id="login-title">Log in</p>
+        <div class="social-buttons-section">
+            <button id="google-button"><img src="../resources/images/google-icon.png" class="google-logo" alt="Google Icon">Continue with Google</button>
+            <button id="fb-button"><img src="../resources/images/fb-icon.png" class="fb-logo" alt="Facebook Icon">Continue with Facebook</button>
+        </div>
+        <div class="hr-break">
+          <hr id="left-hr"><p id="or-text">or</p><hr id="right-hr">
+        </div>
+        <div class="form-section">
+          <form>
+            <div class="email-form">
+              <label>Email</label>
+              <input id="email-form-label" type="text">
+            </div>
+            <div class="password-form">
+              <label>Password</label>
+              <input id="password-form-label" type="password">
+            </div>
+            <div class ="checkbox-form">
+              <input id="checkbox" type="checkbox">
+              <label>Remember me</label>
+            </div>
+            <a href="forgotten-password.html" id="forget-password">Forgot your password?</a>
+          </form>
+          <button id="login-button" onclick="displayErrorText()">Log in</button>
+        </div>
+      </div>
+      <a class="signup-account" href="sign-up.html">Sign up an account</a>
+      <a class="return-to-home" href="index.html">Return to home</a>
+      <p id="error-text">Wrong credentials</p>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+      <img src="../resources/images/globe.png" class="language-globe" alt="Globe Icon">
+      <div style="cursor:pointer" class="language-select">
+        <span>English</span>
+        <img src="../resources/images/white-drop-down-arrow.png" class="dropdown-arrow" alt="Dropdown arrow Icon">
+        <div class="language-select-content">
+        <p>English</p>
+        <p>French</p>
+        <p>Spanish</p>
+        </div>
+      </div>
+      <p style="cursor:pointer" class="other-text">Private Policy</p>
+      <p style="cursor:pointer" class="other-text">Contact</p>
+      <p style="cursor:pointer" class="other-text">© 2022 taskManager</p>
+    </div>
+  </body>
+</html>

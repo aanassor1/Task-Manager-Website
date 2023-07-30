@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>taskManager | Sign up</title>
+    <link href='https://fonts.googleapis.com/css?family=Shippori Antique B1' rel='stylesheet'>
+    <link rel="stylesheet" href="../resources/css/sign-up.css"/>
+    <script src="../resources/js/sign-up.js"></script>
+  </head>
+  <body>
+    <!--Sign-up Section-->
+    <div id="sign-up-section">
+      <img src="../resources/images/taskManager-Icon-red.png" class="logo" alt="taskManager Icon">
+      <div class="sign-up-body">
+        <p id="sign-up-title">Sign up</p>
+        <div class="social-buttons-section">
+            <button id="google-button"><img src="../resources/images/google-icon.png" class="google-logo" alt="Google Icon">Continue with Google</button>
+            <button id="fb-button"><img src="../resources/images/fb-icon.png" class="fb-logo" alt="Facebook Icon">Continue with Facebook</button>
+        </div>
+        <div class="hr-break">
+          <hr id="left-hr"><p id="or-text">or</p><hr id="right-hr">
+        </div>
+        <div class="form-section">
+          <form>
+            <div class="first-name-form">
+              <label>First name</label>
+              <input type="text">
+            </div>
+            <div class="last-name-form">
+              <label>Last name</label>
+              <input type="text">
+            </div>
+            <div class="email-form">
+              <label>Email</label>
+              <input id="email-label" type="text">
+            </div>
+            <div class="password-form">
+              <label>Password</label>
+              <input id="password-label" type="password">
+            </div>
+            <div class="confirmed-password-form">
+              <label>Confirm password</label>
+              <input type="password">
+            </div>
+          </form>
+          <button id="login-button" onclick="displayErrorText()">Register your account</button>
+        </div>
+      </div>
+      <p class="account-text">Already have an account?</p>
+      <a class="return-to-home" href="login.html">Go to login</a>
+      <p id="error-text">Sign up information is wrong</p>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+      <img src="../resources/images/globe.png" class="language-globe" alt="Globe">
+      <div style="cursor:pointer" class="language-select">
+        <span>English</span>
+        <img src="../resources/images/white-drop-down-arrow.png" class="dropdown-arrow" alt="Dropdown arrow Icon">
+        <div class="language-select-content">
+        <p>English</p>
+        <p>French</p>
+        <p>Spanish</p>
+        </div>
+      </div>
+      <p style="cursor:pointer" class="other-text">Private Policy</p>
+      <p style="cursor:pointer" class="other-text">Contact</p>
+      <p style="cursor:pointer" class="other-text">© 2022 taskManager</p>
+    </div>
+  </body>
+</html>

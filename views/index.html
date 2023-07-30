@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>taskManager | Homepage</title>
+    <link href='https://fonts.googleapis.com/css?family=Shippori Antique B1' rel='stylesheet'>
+    <link rel="stylesheet" href="../resources/css/index.css"/>
+    <script src="../resources/js/index.js"></script>
+    <!--Navigation Bar-->
+    <div class="topnav"> 
+      <ul class="topnav-buttons">
+        <li><img src="../resources/images/taskManager-Icon.png" class="logo" alt="taskManager Icon"></li>
+        <li><div class="vl"></div></li>
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">Features</a></li>
+        <div class="rightbuttons">
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="sign-up.html">Sign Up</a></li>
+        </div>
+      </ul>
+    </div>
+  </head>
+  <body>
+    <!--Home Section-->
+    <div id="section1">
+      <img src="../resources/images/secretary-clipart.png" class="secretary-clipart" alt="Image of a Secretary">
+      <p class="slogan">Organise your day better and have a personal assistant <br>with<span style="color:rgb(175, 53, 37)"> taskManager</span></p>
+      <button style="cursor:pointer" class="started-button" onclick="signUpClick()">Get started here</button> 
+      <p class="scroll-text">Scroll down to learn more</p> 
+    </div>
+    <!--Features Section-->
+    <div id="section2">
+      <div class="splitleft">
+        <div class="centered">
+          <div class="feature-paragraph">
+            <h3>Why use taskManager?</h3>
+            <p>No longer need to waste time thinking on what tasks you have left to do,
+            or if you have any meetings because taskManager will store
+            all this in one simple interface.</p>
+            <ul>
+              <li id="list-title"><p>Some features include:</p></li>
+              <li><p>Feature 1</p></li>
+              <li><p>Feature 2</p></li>
+              <li><p>Feature 3</p></li>
+              <li><p>Feature 4</p></li>
+              <li><p>Feature 5</p></li>
+              <li id="no-style-bulletpoint"><p>...and lots more!</p></li>
+            </ul>
+            <p class="sign-up-text">Ready for your stress-free journey to begin?</p>
+            <p class="sign-up-text">Sign up below!</p>
+            <button style="cursor:pointer" class="started-button" onclick="signUpClick()">Get started here</button> 
+          </div>
+        </div>
+      </div>
+      <div class="splitright">
+        <div class="centered">
+          <div class="task-manager-example">
+              <img src="../resources/images/taskManager-screenshot.png" id="screenshot" alt="Image of the application">
+              <i id="msg-screen">A screenshot of the taskManager</i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+      <img src="../resources/images/globe.png" class="language-globe" alt="Globe Icon">
+      <div style="cursor:pointer" class="language-select">
+        <span>English</span>
+        <img src="../resources/images/white-drop-down-arrow.png" class="dropdown-arrow" alt="Dropdown arrow Icon">
+        <div class="language-select-content">
+        <p>English</p>
+        <p>French</p>
+        <p>Spanish</p>
+        </div>
+      </div>
+      <p style="cursor:pointer" class="other-text">Private Policy</p>
+      <p style="cursor:pointer" class="other-text">Contact</p>
+      <p style="cursor:pointer" class="other-text">© 2022 taskManager</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>taskManager | Tasks</title>
+    <link href='https://fonts.googleapis.com/css?family=Shippori Antique B1' rel='stylesheet'>
+    <link rel="stylesheet" href="../resources/css/tasks.css"/>
+    <script src="../resources/js/tasks.js"></script>
+     <!--Navigation Bar-->
+     <div class="topnav"> 
+      <ul class="topnav-buttons">
+        <li><img src="../resources/images/hamburger-icon.png" id="left-nav-icon" onclick="openSideNav()"></li>
+        <li><img src="../resources/images/taskManager-Icon.png" class="logo" alt="taskManager Icon"></li>
+        <div class="search-bar">
+          <li><img class="search-icon" src="../resources/images/search-icon-orange.png" alt="Search Icon"/></li>
+          <li><input type="text" placeholder="Search.."></li>
+        </div>    
+        <div class="rightbuttons">
+          <li><img src="../resources/images/home-icon.png" id="home-icon" onClick="homeClick()" alt="Home Icon"></li>
+          <li><img src="../resources/images/bell-icon.png" id="notif-icon" onclick="openAlert()" alt="Notification Icon"></li>
+          <li><img src="../resources/images/setting-icon.png" id="setting-icon" onclick="openSettings()" alt="Setting Icon"></li>
+        </div>
+      </ul>
+    </div>
+    <div id="theSideNav" class="sidenav">
+      <ul class="sidenav-buttons">
+        <li><img src="../resources/images/clock-icon.png" id="clock-icon" onclick="reminderClick()" alt="Reminder Icon"></li>
+        <li><p onclick="reminderClick()">Reminders</p></li>
+        <li><img src="../resources/images/today-schedule-icon.png" id="today-icon" onclick="todayScheduleClick()" alt="Today Schedule Icon"></li>
+        <li><p onclick="todayScheduleClick()">Today's schedule</p></li>
+        <li><img src="../resources/images/calender-icon.png" id="calender-icon" onclick="calenderClick()" alt="Calendar Icon"></li>
+        <li><p onclick="calenderClick()">Calender</p></li>
+        <li><img src="../resources/images/notepad-icon.png" id="task-icon" onclick="tasksClick()" alt="Task Icon"></li>
+        <li><p onclick="tasksClick()">Tasks</p></li>
+      </ul>
+    </div>
+  </head>
+  <body>
+    <div id="content">
+      <div class="projects-tab">
+        <ul class="projects">
+            <li><p id="title">Projects</p></li>
+            <li><div class="circle"></div></li>
+            <li><p>Work&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8</p></li>
+            <ul class="mini-list">
+              <li><div id="circle1" class="circle"></div></li>
+              <li><p>New website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</p></li>
+              <li><div id="yellow" class="circle"></div></li>
+              <li><p>Meetings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</p></li>
+              <li><div class="circle"></div></li>
+              <li><p>New Product Roadmap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</p></li>
+            </ul>
+            <li><div id="green" class="circle"></div></li>
+            <li><p>Personal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7</p></li>
+            <ul class="mini-list">
+              <li><div id="circle2" class="circle"></div></li>
+              <li><p>Gym&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</p></li>
+              <li><div class="circle"></div></li>
+              <li><p>Shopping&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</p></li>
+              <li><div id="red" class="circle"></div></li>
+              <li><p>Pick up the kids&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</p></li>
+              <li><div id="grey" class="circle"></div></li>
+              <li><p>Clean dishes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</p></li>
+            </ul>
+        </ul>
+      </div>
+      <div class="task-tab">
+        <div class="task-title">
+          <p id="title">Work</p>
+          <div class="three-dot-icon-dropdown">
+            <img src="../resources/images/three-dot-icon.png" class="three-dot-icon" alt="Three dot icon">
+            <div style="cursor:pointer" class="main-task-options">
+              <p>Edit project</p>
+              <p>Duplicate project</p>
+              <p>Delete project</p>
+            </div>
+          </div>
+        </div>
+        <img src="../resources/images/plus-icon.png" class="plus-icon" alt="Plus icon">
+        <button style="cursor:pointer" class="new-task-button">Create new task</button>       
+        <ul class="main-task-list">
+          <li>
+            <div class="task-ui">
+              <img src="../resources/images/orange-drop-down-arrow.png" class="dropdown-arrow" onclick="websiteButton()" alt="Down arrow icon">
+              <p class="title">New Website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</p>
+              <img src="../resources/images/three-dot-icon.png" class="three-dot-icon" alt="Three dot icon">
+              <hr>
+              <ul id="website-tasks" class="mini-task-list">
+                <li>
+                  <li><div id="red" class="circle"></div></li>
+                  <li><p>Task 1</p></li>
+                  <li><i>Due in DD/MM/YY</i></li>
+                  <input type="checkbox" class="checkbox">
+                  <hr>
+                </li>
+                <li>
+                  <li><div id="green" class="circle"></div></li>
+                  <li><p>Task 2</p></li>
+                  <li><i>Due in DD/MM/YY</i></li>
+                  <input type="checkbox" class="checkbox">
+                  <hr>
+                </li>
+                <li>
+                  <div>
+                    <img src="../resources/images/plus-icon.png" class="plus-icon" alt="Plus icon">
+                    <button style="cursor:pointer" class="new-task-button">Create new task</button>   
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="task-ui">
+              <img src="../resources/images/orange-drop-down-arrow.png" class="dropdown-arrow" onclick="meetingButton()" alt="Drop down icon">
+              <p class="title">Meetings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</p>
+              <img src="../resources/images/three-dot-icon.png" class="three-dot-icon" alt="Three dot icon">
+              <hr>
+              <ul id="meeting-tasks" class="mini-task-list">
+                <li>
+                  <li><div id="red" class="circle"></div></li>
+                  <li><p>Task 1</p></li>
+                  <li><i>Due in DD/MM/YY</i></li>
+                  <input type="checkbox" class="checkbox">
+                  <hr>
+                </li>
+                <li>
+                  <li><div id="orange" class="circle"></div></li>
+                  <li><p>Task 2</p></li>
+                  <li><i>Due in DD/MM/YY</i></li>
+                  <input type="checkbox" class="checkbox">
+                  <hr>
+                </li>
+                <li>
+                  <li><div id="grey" class="circle"></div></li>
+                  <li><p>Task 3</p></li>
+                  <li><i>Due in DD/MM/YY</i></li>
+                  <input type="checkbox" class="checkbox">
+                  <hr>
+                </li>
+                <li>
+                  <li><div id="grey" class="circle"></div></li>
+                  <li><p>Task 4</p></li>
+                  <li><i>Due in DD/MM/YY</i></li>
+                  <input type="checkbox" class="checkbox">
+                  <hr>
+                </li>
+                <li>
+                  <div>
+                    <img src="../resources/images/plus-icon.png" class="plus-icon" alt="Plus icon">
+                    <button style="cursor:pointer" class="new-task-button">Create new task</button>   
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--Nav Button Menus-->
+    <div id="alert-box">
+      <div class="notif-box">
+        <p id="title">Reminders</p>
+        <div class="scroll-box">
+          <ul class="notifs">
+            <li>
+              <div class="indiv-notif" onclick="reminderClick()">
+                <img src="../resources/images/calender-icon.png" id="calender-icon" alt="Calendar icon">
+                <p>You have to go shopping</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="settings-box">
+      <div class="settings-box">
+        <p>Settings</p>
+        <p onclick="signOutClick()">Sign out</p>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+      <img src="../resources/images/globe.png" class="language-globe" alt="Globe">
+      <div style="cursor:pointer" class="language-select">
+        <span>English</span>
+        <img src="../resources/images/white-drop-down-arrow.png" class="dropdown-arrow" alt="Drop down arrow icon">
+        <div class="language-select-content">
+        <p>English</p>
+        <p>French</p>
+        <p>Spanish</p>
+        </div>
+      </div>
+      <p style="cursor:pointer" class="other-text">Private Policy</p>
+      <p style="cursor:pointer" class="other-text">Contact</p>
+      <p style="cursor:pointer" class="other-text">© 2022 taskManager</p>
+    </div>
+  </body>
+</html>

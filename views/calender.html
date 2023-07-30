@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>taskManager | Calender</title>
+    <link href='https://fonts.googleapis.com/css?family=Shippori Antique B1' rel='stylesheet'>
+    <link rel="stylesheet" href="../resources/css/calender.css"/>
+    <script src="../resources/js/calender.js"></script>
+    <!--Navigation Bar-->
+    <div class="topnav"> 
+      <ul class="topnav-buttons">
+        <li><img src="../resources/images/hamburger-icon.png" id="left-nav-icon" onclick="openSideNav()"></li>
+        <li><img src="../resources/images/taskManager-Icon.png" class="logo" alt="taskManager Icon"></li>
+        <div class="search-bar">
+          <li><img class="search-icon" src="../resources/images/search-icon-orange.png" alt="Search Icon"/></li>
+          <li><input type="text" placeholder="Search.."></li>
+        </div>    
+        <div class="rightbuttons">
+          <li><img src="../resources/images/home-icon.png" id="home-icon" onClick="homeClick()" alt="Home Icon"></li>
+          <li><img src="../resources/images/bell-icon.png" id="notif-icon" onclick="openAlert()" alt="Notification Icon"></li>
+          <li><img src="../resources/images/setting-icon.png" id="setting-icon" onclick="openSettings()" alt="Setting Icon"></li>
+        </div>
+      </ul>
+    </div>
+    <div id="theSideNav" class="sidenav">
+      <ul class="sidenav-buttons">
+        <li><img src="../resources/images/clock-icon.png" id="clock-icon" onclick="reminderClick()" alt="Reminder Icon"></li>
+        <li><p onclick="reminderClick()">Reminders</p></li>
+        <li><img src="../resources/images/today-schedule-icon.png" id="today-icon" onclick="todayScheduleClick()" alt="Today Schedule Icon"></li>
+        <li><p onclick="todayScheduleClick()">Today's schedule</p></li>
+        <li><img src="../resources/images/calender-icon.png" id="calender-icon" onclick="calenderClick()" alt="Calendar Icon"></li>
+        <li><p onclick="calenderClick()">Calender</p></li>
+        <li><img src="../resources/images/notepad-icon.png" id="task-icon" onclick="tasksClick()" alt="Task Icon"></li>
+        <li><p onclick="tasksClick()">Tasks</p></li>
+      </ul>
+    </div>
+  </head>
+  <body>
+    <div id="content">
+      <div class="content-header">
+        <p id="title">Calender</p>
+        <ul class = "list">
+          <li><img src="../resources/images/white-plus-icon.png" class="left-chevron-icon" alt="Plus Icon"></li>
+          <li><button style="cursor:pointer" class="new-event-button">New Event</button></li>  
+          <li><button style="cursor:pointer" class="print-button" onclick="printPage()">Print</button></li>  
+          <li><img src="../resources/images/print-icon.png" class="print-icon" onclick="printPage()" alt="Printer Icon"></li>
+        </ul>
+      </div>
+      <div class="left-content">
+        <div class="calender">
+          <div class="month">      
+            <ul>
+              <li class="prev">&#10094;</li>
+              <li class="next">&#10095;</li>
+              <li>
+                August 2021
+              </li>
+            </ul>
+          </div>
+          
+          <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+          </ul>
+          
+          <ul class="days">  
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li><span class="active">10</span></li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="right-menu">
+      <p id="title">Wednesday, Aug 10</p>
+      <div class="event">
+        <p id="time">11:00 PM</p>
+        <p id="task-name">Dinner date with wife</p>
+        <p id="length">2 Hours</p>
+        <p id="location">Home Dining Table</p>
+        <div class="event-color"></div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="grid-container">
+          <div id="weekdays" class="grid-item">Monday</div>
+          <div id="weekdays" class="grid-item">Tuesday</div>
+          <div id="weekdays" class="grid-item">Wednesday</div>
+          <div id="weekdays" class="grid-item">Thursday</div>
+          <div id="weekdays" class="grid-item">Friday</div>
+          <div id="weekdays" class="grid-item">Saturday</div>
+          <div id="weekdays" class="grid-item">Sunday</div>
+          <div id="days" class="grid-item">1
+            <div class="event">
+              <div id="red" class="event-color"></div>
+              <p id="time">8 AM</p>
+            </div>
+          </div>
+          <div id="days" class="grid-item">2</div>
+          <div id="days" class="grid-item">3</div>
+          <div id="days" class="grid-item">4
+            <div class="event">
+              <div id="yellow" class="event-color"></div>
+              <p id="time">12 AM</p>
+            </div>
+          </div>
+          <div id="days" class="grid-item">5</div>
+          <div id="days" class="grid-item">6</div>
+          <div id="days" class="grid-item">7
+            <div class="event">
+              <div id="grey" class="event-color"></div>
+              <p id="time">11 PM</p>
+            </div>
+          </div>
+          <div id="days" class="grid-item">8</div>
+          <div id="days" class="grid-item">9</div>
+          <div id="days" class="grid-item">10
+            <div class="event">
+              <div id="grey" class="event-color"></div>
+              <p id="time">10 PM</p>
+            </div>
+            <div class="event">
+              <div id="grey" class="event-color"></div>
+              <p id="time">11 PM</p>
+            </div>
+          </div>
+          <div id="days" class="grid-item">11</div>
+          <div id="days" class="grid-item">12
+            <div class="event">
+              <div id="grey" class="event-color"></div>
+              <p id="time">3 PM</p>
+            </div>
+          </div>
+          <div id="days" class="grid-item">13</div>
+          <div id="days" class="grid-item">14</div>
+          <div id="days" class="grid-item">15
+            <div class="event">
+              <div id="grey" class="event-color"></div>
+              <p id="time">4 PM</p>
+            </div>
+            <div class="event">
+              <div id="grey" class="event-color"></div>
+              <p id="time">5 PM</p>
+            </div>
+          </div>
+          <div id="days" class="grid-item">16</div>
+          <div id="days" class="grid-item">17</div>
+          <div id="days" class="grid-item">18</div>
+          <div id="days" class="grid-item">19</div>
+          <div id="days" class="grid-item">20</div>
+          <div id="days" class="grid-item">21
+            <div class="event">
+              <div id="green" class="event-color"></div>
+              <p id="time">8 PM</p>
+            </div>
+            <div class="event">
+              <div id="green" class="event-color"></div>
+              <p id="time">11 PM</p>
+            </div>
+          </div>
+          <div id="days" class="grid-item">22</div>
+          <div id="days" class="grid-item">23</div>
+          <div id="days" class="grid-item">24</div>
+          <div id="days" class="grid-item">25
+            <div class="event">
+              <div class="event-color"></div>
+              <p id="time">10 AM</p>
+            </div>
+          </div>
+          <div id="days" class="grid-item">26</div>
+          <div id="days" class="grid-item">27</div>
+          <div id="days" class="grid-item">28</div>
+          <div id="days" class="grid-item">29
+            <div class="event">
+              <div id="red" class="event-color"></div>
+              <p id="time">11 AM</p>
+            </div>
+          </div>
+          <div id="days" class="grid-item">30
+            <div class="event">
+              <div id="green" class="event-color"></div>
+              <p id="time">9 PM</p>
+            </div>
+          </div>
+          <div id="days" class="grid-item">31</div>
+          <div id="days" class="grid-item"></div>
+          <div id="days" class="grid-item"></div>
+          <div id="days" class="grid-item"></div>
+          <div id="days" class="grid-item"></div>
+      </div>
+    </div>
+    <!--Nav Button Menus-->
+    <div id="alert-box">
+      <div class="notif-box">
+        <p id="title">Reminders</p>
+        <div class="scroll-box">
+          <ul class="notifs">
+            <li>
+              <div class="indiv-notif" onclick="reminderClick()">
+                <img src="../resources/images/calender-icon.png" id="calender-icon" alt="Calendar Icon">
+                <p>You have to go shopping</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="settings-box">
+      <div class="settings-box">
+        <p>Settings</p>
+        <p onclick="signOutClick()">Sign out</p>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+      <img src="../resources/images/globe.png" class="language-globe"alt="Globe Icon">
+      <div style="cursor:pointer" class="language-select">
+        <span>English</span>
+        <img src="../resources/images/white-drop-down-arrow.png" class="dropdown-arrow" alt="Dropdown arrow Icon">
+        <div class="language-select-content">
+        <p>English</p>
+        <p>French</p>
+        <p>Spanish</p>
+        </div>
+      </div>
+      <p style="cursor:pointer" class="other-text">Private Policy</p>
+      <p style="cursor:pointer" class="other-text">Contact</p>
+      <p style="cursor:pointer" class="other-text">© 2022 taskManager</p>
+    </div>
+  </body>
+</html>

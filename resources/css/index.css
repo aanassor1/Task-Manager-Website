@@ -1,0 +1,298 @@
+/*Body settings */
+body {
+    margin: 0;
+    font-family: 'Shippori Antique B1', Arial, Helvetica, sans-serif;
+}
+
+/*Navigation bar */
+.screenshot {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: auto;
+  height: 30px;
+}
+
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 11;
+}
+
+.topnav-buttons {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(175, 53, 37);
+  }
+
+.topnav-buttons li {
+  float: left;
+}
+
+.topnav-buttons .rightbuttons {
+  float: right;
+}
+.topnav-buttons li img {
+  margin-top: 6px;
+  margin-left: 5px;
+  padding: 10px;
+  padding-right: 30px;
+}
+
+.topnav-buttons li a {
+  margin: 0px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.topnav-buttons li a:hover {
+  background-color: rgb(99, 31, 0);
+}
+
+.vl { /*Vertical Line split in nav bar */
+  border-left: 2px solid rgb(255, 255, 255);
+  height: 30px;
+  margin-top: 15px;
+  padding-left: 0px;
+}
+
+/*Home section */
+.secretary-clipart {
+  height: auto;
+  width: 38%;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  border-radius: 30%;
+}
+
+.slogan {
+  text-align: center;
+  font-size: 35px;
+  margin: 0;
+}
+
+.started-button {
+  border-radius: 8px;
+  background-color: rgb(175, 53, 37);
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Shippori Antique B1', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin:auto;
+  display: block;
+  margin-top: 35px;
+}
+
+.started-button:hover {
+  background-color: rgb(136, 38, 25);
+}
+
+.scroll-text {
+  text-align: center;
+  margin-top: 35px;
+  opacity: 80%;
+}
+
+/*Section Settings*/
+html {
+  scroll-padding-top: 75px;
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  padding-top: 50px;
+  height: 900px;
+  margin-top: -48px;
+}
+
+#section2 {
+  margin-top: -15px;
+  height: 800px;
+}
+/*Footer*/
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(82, 82, 82);
+  color: white;
+  text-align: center;
+}
+
+.language-globe {
+  height: 32px;
+  width: 32px;
+  float: left;
+  display: block;  
+  align-self: center;
+  padding: 8px 8px;
+}
+.language-select {
+  padding: 12px 8px;
+  float: left;
+  display: block;
+  text-align: left;
+  width: 120px;
+}
+
+.language-select:hover {
+  background-color: rgb(54, 54, 54);
+}
+.language-select {
+  position: relative;
+  display: inline-block;
+}
+
+.language-select-content {
+  text-align: left;
+  color: rgb(255, 255, 255);
+  display: none;
+  position: absolute;
+  background-color: rgb(82, 82, 82);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 2px 16px;
+  z-index: 1;
+  bottom: 100%;
+  left: -1%;
+}
+
+.language-select-content p:hover {
+  background-color: #757575;
+}
+
+.language-select:hover .language-select-content {
+  display: block;
+}
+
+.dropdown-arrow {
+  width: 17px;
+  height: 17px;
+  float: right;
+  padding: 3px 0;
+}
+
+.other-text {
+  padding: 0 10px;
+  float: left;
+  text-align: left;
+  font-size: 14px;
+}
+
+.other-text:link {
+  color: white;
+  text-decoration: none;
+}
+
+.other-text:visited {
+  color: white;
+  text-decoration: none;
+}
+.other-text:hover {
+  color: rgb(177, 177, 177);
+  text-decoration: none;
+}
+
+.other-text:active {
+  color: white;
+  text-decoration: none;
+}
+
+/*Feature CSS*/
+.splitleft {
+  height: 100%;
+  width: 65%;
+  position: relative;
+  float: left;
+}
+
+.splitright {
+  height: 100%;
+  width: 35%;
+  position: relative;
+  float: right;
+}
+
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-align: center;
+}
+
+.centered img {
+  height: 100%;
+  margin-left: -50%;
+  border-radius: 20px;
+  border: solid 3px rgb(175, 53, 37);
+}
+
+.feature-paragraph {
+  font-size: 19px;
+  margin: 0;
+}
+
+.started-button {
+  border-radius: 8px;
+  background-color: rgb(175, 53, 37);
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Shippori Antique B1', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin:auto;
+  display: block;
+  margin-top: 35px;
+}
+
+.placeholder {
+  background-color: purple;
+  height: 700px;
+  width: 600px;
+  margin-left: -300px;
+}
+
+.feature-paragraph ul {
+  display: inline-block;
+  text-align: center;
+  margin-top: -10px;
+}
+#list-title {
+  list-style: none;
+  text-align: left;
+}
+
+#no-style-bulletpoint {
+  list-style: none;
+  text-align: right;
+}
+
+.sign-up-text {
+  text-align: center;
+  font-size: 23px;
+  margin-top: -10px;
+}
+
+#msg-screen {
+  display: block;
+  margin-left: -300px;
+  margin-top: 15px;
+}

@@ -1,0 +1,509 @@
+/*Body settings */
+body {
+    margin: 0;
+    font-family: 'Shippori Antique B1', Arial, Helvetica, sans-serif;
+}
+
+/*Navigation bar */
+.logo {
+  width: auto;
+  height: 30px;
+}
+
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 11;
+}
+
+.topnav-buttons {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(175, 53, 37);
+  }
+
+.topnav-buttons .search-icon {
+  height: 16px;
+  width: 18px;
+  float: left;
+  padding: 8px 8px;
+  background-color: rgb(255, 255, 255);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav input[type=text] {
+  float: left;
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+  width: 125%;
+}
+
+.search-bar {
+  margin-top: 13px;
+}
+
+.topnav-buttons li {
+  float: left;
+}
+
+.topnav-buttons .rightbuttons {
+  float: right;
+}
+
+.topnav-buttons .logo {
+  margin-top: 6px;
+  margin-left: 5px;
+  padding: 10px;
+  padding-right: 30px;
+}
+
+.topnav-buttons li a:hover {
+  background-color: rgb(99, 31, 0);
+}
+
+#left-nav-icon {
+  height: 27px;
+  width: 27px;
+  float: left;
+  padding: 8px 8px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-top: 8px;
+  border-radius: 10%;
+}
+
+#left-nav-icon:hover {
+  background-color: rgb(99, 31, 0);
+}
+
+#home-icon {
+  height: 27px;
+  width: 27px;
+  padding: 8px 8px;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-top: -3px;
+  border-radius: 10%;
+}
+
+#home-icon:hover {
+  background-color: rgb(99, 31, 0);
+}
+
+#notif-icon {
+  height: 27px;
+  width: 27px;
+  padding: 8px 8px;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-top: -3px;
+  border-radius: 10%;
+}
+
+#notif-icon:hover {
+  background-color: rgb(99, 31, 0);
+}
+
+#setting-icon {
+  height: 27px;
+  width: 27px;
+  padding: 8px 8px;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-top: -3px;
+  border-radius: 10%;
+}
+
+#setting-icon:hover {
+  background-color: rgb(99, 31, 0);
+}
+
+/*Side nav*/
+.sidenav {
+  height: 100%; 
+  width: 0px;
+  position: fixed;
+  z-index: 5; 
+  top: 0;
+  left: 0;
+  background-color: rgb(175, 53, 37); 
+  overflow-x: hidden;
+  padding-top: 50px;
+  transition: 0.3s;
+}
+
+.sidenav-buttons {
+  list-style-type: none;
+}
+
+.sidenav-buttons img {
+  height: 27px;
+  width: 27px;
+  padding: 8px 8px;
+  border: none;
+  cursor: pointer;
+  margin-left: -30px;
+  margin-bottom: 2px; 
+  border-radius: 10%;
+  left: 0;
+}
+
+.sidenav-buttons img:hover {
+  background-color: rgb(99, 31, 0);
+}
+
+.sidenav-buttons p {
+  margin-top: -49px;
+  margin-left: 20px;
+  color: white;
+  padding: 8px 8px;
+  width: 160px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.sidenav-buttons p:hover {
+  background-color: rgb(99, 31, 0);
+}
+
+/*Body*/
+.content-header {
+  height: 100px; 
+  background-color: rgb(197, 72, 56);
+  overflow: hidden;
+  text-align: center;
+}
+
+.content-header #title {
+  font-size: 32px;
+  color: white;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.content-header .list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.left-chevron-icon {
+  float: left;
+  display: block;
+  height: 25px;
+  width: 25px;
+  padding: 8px 8px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.left-chevron-icon:hover {
+  background-color: rgb(141, 48, 36);
+}
+
+.new-event-button {
+  background-color: rgb(197, 72, 56);
+  border: none;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Shippori Antique B1', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  float: left;
+}
+
+.new-event-button:hover {
+  background-color: rgb(141, 48, 36);
+}
+
+.print-icon {
+  float: right;
+  height: 30px;
+  width: 30px;
+  padding: 8px 8px;
+  cursor: pointer;
+}
+
+.print-button {
+  background-color: rgb(197, 72, 56);
+  border: none;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Shippori Antique B1', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  float: right;
+}
+
+.print-icon:hover {
+  background-color: rgb(141, 48, 36);
+}
+
+.print-button:hover {
+  background-color: rgb(141, 48, 36);
+}
+
+.content-header .print-button {
+  float: right;
+}
+
+/*Content*/
+.main-content {
+  height: calc(100vh - (61px + 150px)); 
+  width: 100%;
+  position: fixed;
+  top: 150;
+  left: 0;
+  background-color: rgb(255, 255, 255); 
+}
+
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-auto-rows: 120px;
+  background-color: #ffffff;
+  overflow: auto;
+}
+
+.grid-container::-webkit-scrollbar {
+  display: none;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 25px;
+  text-align: right;
+}
+
+.event-color {
+  width: 15px;
+  height: 118px;
+  background-color: rgb(255, 0, 0);
+  margin: -10px;
+  padding: 0;
+}
+
+.event-item #task-name{
+  text-align: left;
+  font-size: 22px;
+  margin: -105px 15px;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellow {
+  background-color: orange;
+}
+
+#green {
+  background-color: green;
+}
+
+#grey {
+  background-color: grey;
+}
+
+/*Footer*/
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(82, 82, 82);
+    color: white;
+    text-align: center;
+    position: fixed;
+  }
+  
+  .language-globe {
+    height: 32px;
+    width: 32px;
+    float: left;
+    display: block;  
+    align-self: center;
+    padding: 8px 8px;
+  }
+  .language-select {
+    padding: 12px 8px;
+    float: left;
+    display: block;
+    text-align: left;
+    width: 120px;
+  }
+  
+  .language-select:hover {
+    background-color: rgb(54, 54, 54);
+  }
+  .language-select {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .language-select-content {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    display: none;
+    position: absolute;
+    background-color: rgb(82, 82, 82);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 2px 16px;
+    z-index: 1;
+    bottom: 100%;
+    left: -1%;
+  }
+  
+  .language-select-content p:hover {
+    background-color: #757575;
+  }
+  
+  .language-select:hover .language-select-content {
+    display: block;
+  }
+  
+  .dropdown-arrow {
+    width: 17px;
+    height: 17px;
+    float: right;
+    padding: 3px 0;
+  }
+  
+  .other-text {
+    padding: 0 10px;
+    float: left;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .other-text:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .other-text:visited {
+    color: white;
+    text-decoration: none;
+  }
+  .other-text:hover {
+    color: rgb(177, 177, 177);
+    text-decoration: none;
+  }
+  
+  .other-text:active {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /*Alert box*/
+  #alert-box #title {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  #alert-box {
+    display: none;
+  }
+  
+  #alert-box .notif-box {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(175, 53, 37);
+    border-radius: 10px;
+    position: fixed;
+    top: 70px;
+    right: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    z-index: 5;
+  }
+  
+  #alert-box .scroll-box {
+    width: 250px;
+    height: 230px;
+    background-color: rgb(197, 72, 56);
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translate(-50%, -0%);
+    color: rgb(255, 255, 255);
+  }
+  
+  #alert-box .notifs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #alert-box .indiv-notif {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(197, 72, 56);
+    border-bottom: 2px solid rgb(175, 53, 37);
+    cursor: pointer;
+  }
+  
+  #alert-box.indiv-notif:hover {
+    background-color: rgb(226, 97, 80);
+  }
+  
+  #alert-box .notifs #calender-icon {
+    height: 30px;
+    width: 30px;
+    float: left;
+    padding: 10px 5px;
+    margin: 4px;
+  }
+  
+  #alert-box .notifs p {
+    float: right;
+    margin: -40px 20px;
+    font-size: 15px;
+    padding: 0;
+  }
+
+  /*Setting*/
+
+  #settings-box {
+    display: none;
+  }
+  .settings-box {
+    width: 125px;
+    height: 125px;
+    background-color: rgb(175, 53, 37);
+    border-radius: 5px;
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    z-index: 5;
+  }
+
+  .settings-box p {
+    font-size: 17px;
+    cursor: pointer;
+    padding: 7px;
+  }
+  
+  .settings-box p:hover {
+    background-color: rgb(133, 34, 21);
+  }

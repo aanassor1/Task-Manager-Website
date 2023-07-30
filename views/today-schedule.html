@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>taskManager | Today Schedule</title>
+    <link href='https://fonts.googleapis.com/css?family=Shippori Antique B1' rel='stylesheet'>
+    <link rel="stylesheet" href="../resources/css/today-schedule.css"/>
+    <script src="../resources/js/today-schedule.js"></script>
+     <!--Navigation Bar-->
+     <div class="topnav"> 
+      <ul class="topnav-buttons">
+        <li><img src="../resources/images/hamburger-icon.png" id="left-nav-icon" onclick="openSideNav()"></li>
+        <li><img src="../resources/images/taskManager-Icon.png" class="logo" alt="taskManager Icon"></li>
+        <div class="search-bar">
+          <li><img class="search-icon" src="../resources/images/search-icon-orange.png" alt="Search Icon"/></li>
+          <li><input type="text" placeholder="Search.."></li>
+        </div>    
+        <div class="rightbuttons">
+          <li><img src="../resources/images/home-icon.png" id="home-icon" onClick="homeClick()" alt="Home Icon"></li>
+          <li><img src="../resources/images/bell-icon.png" id="notif-icon" onclick="openAlert()" alt="Notification Icon"></li>
+          <li><img src="../resources/images/setting-icon.png" id="setting-icon" onclick="openSettings()" alt="Setting Icon"></li>
+        </div>
+      </ul>
+    </div>
+    <div id="theSideNav" class="sidenav">
+      <ul class="sidenav-buttons">
+        <li><img src="../resources/images/clock-icon.png" id="clock-icon" onclick="reminderClick()" alt="Reminder Icon"></li>
+        <li><p onclick="reminderClick()">Reminders</p></li>
+        <li><img src="../resources/images/today-schedule-icon.png" id="today-icon" onclick="todayScheduleClick()" alt="Today Schedule Icon"></li>
+        <li><p onclick="todayScheduleClick()">Today's schedule</p></li>
+        <li><img src="../resources/images/calender-icon.png" id="calender-icon" onclick="calenderClick()" alt="Calendar Icon"></li>
+        <li><p onclick="calenderClick()">Calender</p></li>
+        <li><img src="../resources/images/notepad-icon.png" id="task-icon" onclick="tasksClick()" alt="Task Icon"></li>
+        <li><p onclick="tasksClick()">Tasks</p></li>
+      </ul>
+    </div>
+  </head>
+  <body>
+    <div id="content">
+      <div class="content-header">
+        <p id="title">Today Schedule</p>
+        <ul class = "list">
+          <li><img src="../resources/images/white-plus-icon.png" class="left-chevron-icon" alt="Plus Icon"></li>
+          <li><button style="cursor:pointer" class="new-event-button">New Event</button></li>  
+          <li><button style="cursor:pointer" class="new-event-button" onclick="calenderClick()">View Calender</button></li> 
+          <li><button style="cursor:pointer" class="print-button" onclick="printPage()">Print</button></li>  
+          <li><img src="../resources/images/print-icon.png" class="print-icon" onclick="printPage()"></li>
+        </ul>
+      </div>
+      <div class="main-content">
+        <div class="grid-container">
+          <div class="grid-item">1 AM</div>
+          <div class="grid-item">
+            <div class="event-item" onclick="calenderClick()" style="cursor:pointer";>
+              <div id="grey" class="event-color"></div>
+              <p id="task-name" >Check if kids are asleep</p>
+            </div>
+          </div>
+          <div class="grid-item">2 AM</div>
+          <div class="grid-item">
+            <div class="event-item" onclick="calenderClick()" style="cursor:pointer";>
+              <div id="green" class="event-color"></div>
+              <p id="task-name">Go to bed and sleep</p>
+            </div>
+          </div>
+          <div class="grid-item">3 AM</div>
+          <div class="grid-item"> </div>
+          <div class="grid-item">4 AM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">5 AM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">6 AM</div>
+          <div class="grid-item">
+            <div class="event-item" onclick="calenderClick()" style="cursor:pointer";>
+              <div id="grey" class="event-color"></div>
+              <p id="task-name">Morning run</p>
+            </div>
+          </div>
+          <div class="grid-item">7 AM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">8 AM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">9 AM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">10 AM</div>
+          <div class="grid-item">
+            <div class="event-item" onclick="calenderClick()" style="cursor:pointer";>
+              <div id="red" class="event-color"></div>
+              <p id="task-name">Meeting with Google CEO</p>
+            </div>
+          </div>
+          <div class="grid-item">11 AM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">12 AM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">1 PM</div>
+          <div class="grid-item">
+            <div class="event-item" onclick="calenderClick()" style="cursor:pointer";>
+              <div id="yellow" class="event-color"></div>
+              <p id="task-name">Lunch with the president</p>
+            </div>
+          </div>
+          <div class="grid-item">2 PM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">3 PM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">4 PM</div>
+          <div class="grid-item">
+            <div class="event-item" onclick="calenderClick()" style="cursor:pointer";>
+              <div id="yellow" class="event-color"></div>
+              <p id="task-name">Parents evening at John Doe's school</p>
+            </div>
+          </div>
+          <div class="grid-item">5 PM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">6 PM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">7 PM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">8 PM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">9 PM</div>
+          <div class="grid-item">
+            <div class="event-item" onclick="calenderClick()" style="cursor:pointer";>
+              <div id="green" class="event-color"></div>
+              <p id="task-name">Arsenal vs Tottenham match</p>
+            </div>
+          </div>
+          <div class="grid-item">10 PM</div>
+          <div class="grid-item"></div>
+          <div class="grid-item">11 PM</div>
+          <div class="grid-item"></div>
+        </div>
+      </div>
+    </div>
+    <!--Nav Button Menus-->
+    <div id="alert-box">
+      <div class="notif-box">
+        <p id="title">Reminders</p>
+        <div class="scroll-box">
+          <ul class="notifs">
+            <li>
+              <div class="indiv-notif" onclick="reminderClick()">
+                <img src="../resources/images/calender-icon.png" id="calender-icon" alt="Calendar icon">
+                <p>You have to go shopping</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="settings-box">
+      <div class="settings-box">
+        <p>Settings</p>
+        <p onclick="signOutClick()">Sign out</p>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+      <img src="../resources/images/globe.png" class="language-globe" alt="Globe">
+      <div style="cursor:pointer" class="language-select">
+        <span>English</span>
+        <img src="../resources/images/white-drop-down-arrow.png" class="dropdown-arrow" alt="Drop down arrow icon">
+        <div class="language-select-content">
+        <p>English</p>
+        <p>French</p>
+        <p>Spanish</p>
+        </div>
+      </div>
+      <p style="cursor:pointer" class="other-text">Private Policy</p>
+      <p style="cursor:pointer" class="other-text">Contact</p>
+      <p style="cursor:pointer" class="other-text">© 2022 taskManager</p>
+    </div>
+  </body>
+</html>
